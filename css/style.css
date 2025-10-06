@@ -100,21 +100,21 @@ main {
     flex: 1;
 }
 
-main section h2 {
+.destacados h2 {
     color: #000000;
     text-align: center;
     font-size: 45px;
     font-weight: bolder;
 }
 
-main section h3 {
+.destacados div div h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 16px;
 }
 
 
-
+/*carrito de la compra*/
 main section p {
     font-size: 20px;
     font-weight: bold;
@@ -148,35 +148,14 @@ form textarea {
     align-items: center;
 }
 
-.carrito-de-compra .carro h2 {
-    text-align: left;
-    margin-left: 15px;
+.carrito-de-compra h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
 }
 
-.carrito-de-compra .carrito-2 img {
-    width: 200px;
-    height: 250px;
-}
-
-.carrito-de-compra .carrito-2 {
-    display: flex;
-    margin: 50px;
-    gap: 20px;
-}
-
-.carrito-de-compra .carrito-2 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carrito-de-compra .carrito {
-    margin: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.carrito-de-compra .carrito img {
+.carrito-de-compra img {
     width: 280px;
     height: 320px;
     margin-bottom: 10px;
@@ -184,8 +163,44 @@ form textarea {
     margin-right: 15px;
 }
 
-.carrito-de-compra h4 {
+.carrito-de-compra div {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.carrito-de-compra div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-de-compra div div h4 {
     font-weight: bolder;
+}
+
+.prod-similares h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 15px;
+}
+
+.prod-similares div {
+    display: flex;
+    margin: 20px 50px 20px 50px;
+    gap: 20px;
+}
+
+.prod-similares div img {
+    width: 200px;
+    height: 250px;
+}
+
+.prod-similares div .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form {
@@ -206,73 +221,100 @@ form textarea {
     border: solid white 1px;
 }
 
-.prod-galeria {
+.prod-galeria div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 500px;
     align-items: center;
 }
 
-.prod-galeria .tarjeta img {
+.prod-galeria div .tarjeta img {
     width: 250px;
     height: 300px;
 }
 
-.prod-galeria .tarjeta {
+.prod-galeria div .tarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.prod-galeria button {
+.prod-galeria div button {
     background-color: #000000;
     color: #ffffff;
     border-radius: 10px;
     padding: 5px;
 }
 
-.container {
+.prod-galeria h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.prod-galeria div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.destacados div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 
-.container .tarjeta {
+.destacados div .tarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container .tarjeta img {
+.destacados div .tarjeta img {
     width: 300px;
     height: 300px;
 }
 
-.container .img-4 {
+.destacados div .img-4 {
     grid-column: span 3;
 }
 
-.container .img-4 img {
+.destacados div .img-4 img {
     width: 100%;
     height: 100%;
 }
 
-.cont-flex {
+.cont-flex div {
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
 
-.cont-flex .tarjeta img {
+.cont-flex div .tarjeta img {
     width: 250px;
     height: 300px;
 }
 
-.cont-flex .tarjeta {
+.cont-flex div .tarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.cont-flex h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.cont-flex div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px;
+}
+
 .combo ul {
     list-style: none;
     font-weight: bold;
@@ -283,32 +325,33 @@ form textarea {
     height: 350px;
     margin-right: 10px;
 }
+
 /*-----FOOTER-----*/
 
 footer {
     background-color: #000000;
 }
 
-footer h2 {
+.footer-container div h2 {
     text-align: center;
     color: #ffffff;
     font-size: 25px;
 }
 
-footer p {
+.footer-container div p {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
 }
 
-footer div img {
+.footer-container div img {
     width: 70px;
     height: 70px;
     margin: 14px;
 }
 
-footer iframe {
+.footer-container div iframe {
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
@@ -324,40 +367,41 @@ footer iframe {
 
 
 /*----- MEDIA QUERIES -----*/
+
 @media screen and (max-width:995px) {
-    .container {
+    .destacados div {
         grid-template-columns: 1fr 1fr;
     }
 
-    .container .img-4 {
+    .destacados div .img-4 {
         grid-column: span 1;
     }
 
-    .container .img-4 img {
+    .destacados div .img-4 img {
         width: 300px;
         height: 300px;
     }
 }
 
-@media screen and (max-width:883px) {
-    .prod-galeria {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width:848px) {
-    .cont-flex {
+@media screen and (max-width:980px) {
+    .cont-flex div{
         flex-direction: column;
         padding: 0%;
     }
 
-    .cont-flex .tarjeta {
+    .cont-flex div .tarjeta {
         padding: 30px;
     }
 
-    .cont-flex .tarjeta img {
+    .cont-flex div .tarjeta img {
         width: 300px;
         height: 350px;
+    }
+}
+
+@media screen and (max-width:883px) {
+    .prod-galeria div {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -366,11 +410,11 @@ footer iframe {
         font-size: 50px;
     }
 
-    .container {
+    .destacados div {
         grid-template-columns: 1fr;
     }
 
-    .container .tarjeta img {
+    .destacados div .tarjeta img {
         width: 400px;
         height: 400px;
     }
@@ -393,7 +437,7 @@ footer iframe {
         font-size: 40px;
     }
 
-    .container .tarjeta img {
+    .destacados div .tarjeta img {
         width: 350px;
         height: 350px;
     }
@@ -401,16 +445,21 @@ footer iframe {
     .img-icono {
         width: 30px;
     }
+
+    .prod-similares div {
+        flex-direction: column;
+        align-items: first baseline;
+    }
 }
 
 @media screen and (max-width:587px) {
-    .prod-galeria {
+    .prod-galeria div {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width:527px) {
-    .carrito {
+@media screen and (max-width:570px) {
+    .carrito-de-compra div {
         flex-direction: column;
     }
 }
@@ -420,13 +469,9 @@ footer iframe {
         width: 40px;
     }
 
-    .container .tarjeta img {
+    .destacados div .tarjeta img {
         width: 250px;
         height: 250px;
-    }
-
-    .carrito-2 {
-        flex-direction: column;
     }
 }
 
@@ -435,8 +480,14 @@ footer iframe {
         width: 320px;
     }
 
-    .cont-flex .tarjeta img {
+    .cont-flex div .tarjeta img {
         width: 250px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width:386px) {
+    .prod-similares div {
+        margin: 20px;
     }
 }

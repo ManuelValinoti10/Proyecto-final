@@ -1,0 +1,38 @@
+footer {
+    background-color: #000000;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+
+        div {
+            h2 {
+                text-align: center;
+                color: #ffffff;
+                font-size: 25px;
+            }
+
+            p {
+                text-align: center;
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                margin: 14px;
+            }
+
+            iframe {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 30px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

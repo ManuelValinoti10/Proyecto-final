@@ -1,3 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(104, 104, 104, 0.2549019608);
+  font-family: "Libertinus Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 8px;
+}
+
+header {
+  background-color: #000000;
+}
+header section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #ffffff !important;
+  padding: 0px 7px 0px 7px;
+}
+.navbar-brand:hover {
+  background-color: rgba(255, 255, 255, 0.5921568627);
+  border-radius: 8px;
+  color: #000000 !important;
+}
+
+.nav-item {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.active {
+  color: #ffffff !important;
+  padding: 1px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+.active:hover {
+  background-color: rgba(255, 255, 255, 0.5921568627);
+  border-radius: 8px;
+  color: #000000 !important;
+}
+
+.btn {
+  background-color: #000000;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+header section .img-icono {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+header section .img-icono:hover {
+  transform: scale(1.1);
+}
+header section h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+  font-weight: bolder;
+}
+
+main {
+  flex: 1;
+}
+
+.destacados h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bolder;
+}
+.destacados div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.destacados div .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destacados div .tarjeta img {
+  width: 300px;
+  height: 300px;
+}
+.destacados div .tarjeta h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px;
+}
+.destacados div .img-4 {
+  grid-column: span 3;
+}
+.destacados div .img-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #000000;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+footer .footer-container div h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+footer .footer-container div p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .footer-container div img {
+  width: 70px;
+  height: 70px;
+  margin: 14px;
+}
+footer .footer-container div iframe {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=estilos.css.map */

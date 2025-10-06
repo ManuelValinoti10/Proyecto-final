@@ -1,0 +1,44 @@
+main {
+    flex: 1;
+}
+
+.destacados {
+    h2 {
+        color: #000000;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        .tarjeta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 16px;
+            }
+        }
+
+        .img-4 {
+            grid-column: span 3;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
