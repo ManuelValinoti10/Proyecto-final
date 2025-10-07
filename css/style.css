@@ -69,7 +69,7 @@ header section {
     border-radius: 3px;
 }
 
-h1 {
+header section h1 {
     color: #ffffff;
     font-size: 60px;
     font-style: italic;
@@ -77,7 +77,7 @@ h1 {
     font-weight: bolder;
 }
 
-.img-icono {
+header section .img-icono {
     width: 50px;
     height: auto;
     margin-top: 10px;
@@ -113,39 +113,26 @@ main {
     margin: 16px;
 }
 
-
-/*carrito de la compra*/
-main section p {
-    font-size: 20px;
-    font-weight: bold;
-}
-
 img {
     border-radius: 8px;
 }
 
-form select {
+.form select {
     padding: 4px;
 }
 
-form input {
+.form input {
     padding: 3px;
 }
 
-form label {
+.form label {
     margin: 5px;
 }
 
-form textarea {
+.form textarea {
     padding: 5px;
     width: 400px;
     height: 90px;
-}
-
-.combo {
-    margin: 15px 0px 15px 20px;
-    display: flex;
-    align-items: center;
 }
 
 .carrito-de-compra h2 {
@@ -178,6 +165,11 @@ form textarea {
     font-weight: bolder;
 }
 
+.carrito-de-compra div div p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .prod-similares h2 {
     color: #000000;
     font-size: 40px;
@@ -192,7 +184,7 @@ form textarea {
     gap: 20px;
 }
 
-.prod-similares div img {
+.prod-similares div .tarjeta img {
     width: 200px;
     height: 250px;
 }
@@ -201,6 +193,12 @@ form textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.prod-similares div .tarjeta h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px;
 }
 
 .form {
@@ -239,11 +237,14 @@ form textarea {
     align-items: center;
 }
 
-.prod-galeria div button {
+.prod-galeria div .tarjeta .buttom {
     background-color: #000000;
     color: #ffffff;
     border-radius: 10px;
-    padding: 5px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid white 1px;
 }
 
 .prod-galeria h2 {
@@ -253,7 +254,7 @@ form textarea {
     font-weight: bolder;
 }
 
-.prod-galeria div h3 {
+.prod-galeria div .tarjeta h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 16px;
@@ -309,13 +310,29 @@ form textarea {
     font-weight: bolder;
 }
 
-.cont-flex div h3 {
+.cont-flex div .tarjeta h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 16px;
 }
 
-.combo ul {
+.cont-flex div .tarjeta .buttom {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid white 1px;
+}
+
+.combo {
+    margin: 15px 0px 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.combo ul li {
     list-style: none;
     font-weight: bold;
 }
@@ -351,7 +368,7 @@ footer {
     margin: 14px;
 }
 
-.footer-container div iframe {
+footer .footer-container div iframe {
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
@@ -384,7 +401,7 @@ footer {
 }
 
 @media screen and (max-width:980px) {
-    .cont-flex div{
+    .cont-flex div {
         flex-direction: column;
         padding: 0%;
     }
@@ -423,7 +440,7 @@ footer {
         flex-direction: column;
     }
 
-    footer iframe {
+    .footer-container div iframe {
         width: 300px;
     }
 
@@ -476,7 +493,7 @@ footer {
 }
 
 @media screen and (max-width:470px) {
-    form textarea {
+    .form textarea {
         width: 320px;
     }
 

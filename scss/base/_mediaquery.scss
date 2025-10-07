@@ -1,0 +1,123 @@
+@media screen and (max-width:995px) {
+    .destacados div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destacados div .img-4 {
+        grid-column: span 1;
+    }
+
+    .destacados div .img-4 img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .cont-flex div {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .cont-flex div .tarjeta {
+        padding: 30px;
+    }
+
+    .cont-flex div .tarjeta img {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:883px) {
+    .prod-galeria div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:820px) {
+    header section h1 {
+        font-size: 50px;
+    }
+
+    .destacados div {
+        grid-template-columns: 1fr;
+    }
+
+    .destacados div .tarjeta img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footer-container div iframe {
+        width: 300px;
+    }
+
+    header section .img-icono {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header section h1 {
+        font-size: 40px;
+    }
+
+    .destacados div .tarjeta img {
+        width: 350px;
+        height: 350px;
+    }
+
+    header section .img-icono {
+        width: 30px;
+    }
+
+    .prod-similares div {
+        flex-direction: column;
+        align-items: first baseline;
+    }
+}
+
+@media screen and (max-width:587px) {
+    .prod-galeria div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .carrito-de-compra div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:518px) {
+    header section .img-icono {
+        width: 40px;
+    }
+
+    .destacados div .tarjeta img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .form textarea {
+        width: 320px;
+    }
+
+    .cont-flex div .tarjeta img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:386px) {
+    .prod-similares div {
+        margin: 20px;
+    }
+}
