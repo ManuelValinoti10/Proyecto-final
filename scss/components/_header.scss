@@ -9,9 +9,29 @@ header {
 
 .navbar {
     background-color: #000000;
+
+    div {
+        img {
+            width: 150px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        a {
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            i {
+                color: #ffffff;
+                font-size: 30px;
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
-.navbar-brand {
+.nav-lik {
     font-weight: bolder;
     font-size: 30px;
     color: #ffffff !important;
@@ -27,6 +47,7 @@ header {
 .nav-item {
     font-weight: bolder;
     font-size: 20px;
+    margin: 5px;
 }
 
 .active {
@@ -49,26 +70,4 @@ header {
 .navbar-toggler-icon {
     background-color: #ffffff;
     border-radius: 3px;
-}
-
-header {
-    section {
-        .img-icono {
-            width: 50px;
-            height: auto;
-            margin-top: 10px;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        h1 {
-            color: #ffffff;
-            font-size: 60px;
-            font-style: italic;
-            text-align: center;
-            font-weight: bolder;
-        }
-    }
 }

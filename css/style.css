@@ -362,10 +362,11 @@ footer {
     font-weight: bold;
 }
 
-.footer-container div img {
+.footer-container div a i {
     width: 70px;
     height: 70px;
     margin: 14px;
+    color: #ffffff;
 }
 
 footer .footer-container div iframe {

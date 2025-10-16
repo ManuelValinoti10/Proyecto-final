@@ -32,14 +32,27 @@ header section {
 .navbar {
   background-color: #000000;
 }
+.navbar div img {
+  width: 150px;
+  height: 70px;
+  margin-right: 10px;
+}
+.navbar div a:hover {
+  transform: scale(1.1);
+}
+.navbar div a i {
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 10px;
+}
 
-.navbar-brand {
+.nav-lik {
   font-weight: bolder;
   font-size: 30px;
   color: #ffffff !important;
   padding: 0px 7px 0px 7px;
 }
-.navbar-brand:hover {
+.nav-lik:hover {
   background-color: rgba(255, 255, 255, 0.5921568627);
   border-radius: 8px;
   color: #000000 !important;
@@ -48,6 +61,7 @@ header section {
 .nav-item {
   font-weight: bolder;
   font-size: 20px;
+  margin: 5px;
 }
 
 .active {
@@ -69,22 +83,6 @@ header section {
 .navbar-toggler-icon {
   background-color: #ffffff;
   border-radius: 3px;
-}
-
-header section .img-icono {
-  width: 50px;
-  height: auto;
-  margin-top: 10px;
-}
-header section .img-icono:hover {
-  transform: scale(1.1);
-}
-header section h1 {
-  color: #ffffff;
-  font-size: 60px;
-  font-style: italic;
-  text-align: center;
-  font-weight: bolder;
 }
 
 main {
@@ -144,49 +142,16 @@ footer .footer-container div p {
   font-size: 20px;
   font-weight: bold;
 }
-footer .footer-container div img {
-  width: 70px;
-  height: 70px;
+footer .footer-container div a {
+  font-size: 55px;
   margin: 14px;
+  color: #ffffff;
 }
 footer .footer-container div iframe {
   width: 200px;
   height: 200px;
   margin-bottom: 30px;
   border-radius: 10px;
-}
-
-.prod-galeria h2 {
-  color: #000000;
-  text-align: center;
-  font-size: 45px;
-  font-weight: bolder;
-}
-.prod-galeria div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 500px;
-  align-items: center;
-}
-.prod-galeria div .tarjeta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.prod-galeria div .tarjeta img {
-  width: 250px;
-  height: 300px;
-}
-.prod-galeria div .tarjeta h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 16px;
-}
-.prod-galeria div .tarjeta button {
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 5px;
 }
 
 .carrito-de-compra h2 {
@@ -286,6 +251,10 @@ footer .footer-container div iframe {
   border: solid white 1px;
 }
 
+.row {
+  margin: 20px;
+}
+
 .cont-flex h2 {
   color: #000000;
   text-align: center;
@@ -319,6 +288,39 @@ footer .footer-container div iframe {
   margin-top: 10px;
   margin-bottom: 10px;
   border: solid white 1px;
+}
+
+.prod-galeria h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bolder;
+}
+.prod-galeria div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 500px;
+  align-items: center;
+}
+.prod-galeria div .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prod-galeria div .tarjeta img {
+  width: 250px;
+  height: 300px;
+}
+.prod-galeria div .tarjeta h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px;
+}
+.prod-galeria div .tarjeta button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .combo {

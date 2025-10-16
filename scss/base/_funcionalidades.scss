@@ -1,0 +1,27 @@
+// VARIABLES
+$Color-prmiario: black;
+
+
+//LISTAS
+
+$Colores: black, red, white, blue;
+
+//EXTENDS
+
+%boton {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid white 1px;
+}
+
+// MIXIN
+
+@mixin flex ($flex, $direction, $align) {
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
