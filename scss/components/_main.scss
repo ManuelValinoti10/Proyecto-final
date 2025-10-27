@@ -8,17 +8,33 @@ main {
         text-align: center;
         font-size: 45px;
         font-weight: bolder;
-    }
+        animation-name: slidein;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+        animation-fill-mode: backwards;
 
+        @keyframes slidein {
+            from {
+                transform: translateX(-100vw);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+    }
+    
     div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
 
         .tarjeta {
-            display: flex;
+            /*display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;*/
+            @include flex(flex, column, center);
 
             img {
                 width: 300px;
