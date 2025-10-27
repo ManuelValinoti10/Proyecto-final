@@ -1,3 +1,20 @@
+@media screen and (max-width:1050px) {
+    .cont-flex div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-flex div .tarjeta {
+        padding: 30px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .cont-flex div .tarjeta img {
+        width: 300px;
+        height: 350px;
+    }
+}
+
 @media screen and (max-width:995px) {
     .destacados div {
         grid-template-columns: 1fr 1fr;
@@ -10,22 +27,6 @@
     .destacados div .img-4 img {
         width: 300px;
         height: 300px;
-    }
-}
-
-@media screen and (max-width:980px) {
-    .cont-flex div {
-        flex-direction: column;
-        padding: 0%;
-    }
-
-    .cont-flex div .tarjeta {
-        padding: 30px;
-    }
-
-    .cont-flex div .tarjeta img {
-        width: 300px;
-        height: 350px;
     }
 }
 
@@ -127,8 +128,8 @@
     }
 
     .cont-flex div .tarjeta img {
-        width: 250px;
-        height: 300px;
+        width: 230px;
+        height: 250px;
     }
 
     .combo {
@@ -142,6 +143,11 @@
 @media screen and (max-width:386px) {
     .prod-similares div {
         margin: 20px;
+    }
+
+    .cont-flex div .tarjeta img {
+        width: 200px;
+        height: 220px;
     }
 
     .combo {
