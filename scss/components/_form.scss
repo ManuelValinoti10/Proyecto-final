@@ -5,17 +5,21 @@
     border-radius: 10px;
     font-size: 20px;
 
-    label {
-        margin: 5px;
+    div {
+        width: 800px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    input {
-        padding: 3px;
+    select {
+        width: 800px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     textarea {
         padding: 5px;
-        width: 400px;
+        width: 800px;
         height: 90px;
     }
 
@@ -35,6 +39,16 @@
     }
 }
 
+.form-select:focus {
+    border-color: #000000 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.form-control:focus {
+    border-color: #000000 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25) !important;
+}
+
 .btn-primary {
     color: #ffffff !important;
     padding: 5px 10px 5px 10px;
@@ -52,9 +66,4 @@
 
 .row {
     margin: 20px;
-}
-
-.form-control:focus {
-    border-color: #000000 !important;
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25) !important;
 }

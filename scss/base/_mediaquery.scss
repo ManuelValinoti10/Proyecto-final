@@ -43,6 +43,15 @@
             padding: 10px;
         }
     }
+
+    .prod-similares div {
+        .tarjeta {
+            img {
+                width: 200px;
+                height: 250px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:820px) {
@@ -70,6 +79,14 @@
     header section .img-icono {
         width: 40px;
     }
+
+}
+
+@media screen and (max-width:820px) {
+    .prod-similares div {
+        flex-direction: column;
+        align-items: first baseline;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -84,11 +101,6 @@
 
     header section .img-icono {
         width: 30px;
-    }
-
-    .prod-similares div {
-        flex-direction: column;
-        align-items: first baseline;
     }
 }
 
@@ -138,13 +150,13 @@
             height: 200px;
         }
     }
-}
 
-@media screen and (max-width:386px) {
     .prod-similares div {
         margin: 20px;
     }
+}
 
+@media screen and (max-width:386px) {
     .cont-flex div .tarjeta img {
         width: 200px;
         height: 220px;
